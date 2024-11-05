@@ -2,4 +2,4 @@
 
 ## Tutorial
 
-[Google Earth Engine Guides](https://developers.google.com/earth-engine/guides)
+[Google Earth Engine Guides](https://developers.google.com/earth-engine)
