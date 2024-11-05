@@ -1,0 +1,163 @@
+---
+title: "Introdução ao Google Earth Engine"
+author: "<br> [Maurício Vancine](https://mauriciovancine.github.io/) • [lab.exe/Unicamp](https://www.mathiasmpires.net.br/)"
+date: "Novembro de 2024"
+date-format: long
+format: 
+  revealjs:
+    theme: [custom.scss]
+    lang: pt
+    slide-number: c/t
+    show-slide-number: all
+    hash-type: number
+    preview-links: false
+    chalkboard: true
+    logo: https://earthengine.google.com/static/images/earth-engine-logo.png
+    execute:
+      echo: true
+      eval: true
+      warning: false
+      message: false
+editor: source
+---
+
+## Maurício Vancine 
+
+::: columns
+::: {.column width="40%"}
+<br><br>
+<center>
+![](img/avatar.png)
+</center>
+:::
+
+::: {.column width="60%"}
+
+- Ecólogo e Doutor em Ecologia - Unesp
+- Pós-Doc (Mathias Pires - Amazônia)
+- Ecologia Espacial
+- Modelagem Ecológica
+- Análise de Dados Ecológicos e Geoespaciais
+- Ecologia e Conservação de Anfíbios
+- *Open source* [R, QGIS, GRASS GIS, GNU/Linux, ...]
+
+:::
+:::
+
+## IMPORTANTE!!!
+
+**Estamos num espaço seguro e amigável**
+
+- Sintam-se à vontade para me interromper e tirar dúvidas
+
+<center>
+<img src="img/general_starwars_teamwork.png" style="width:50%"/>
+</center>
+
+::: footer
+[\@allison_horst](https://twitter.com/allison_horst)
+:::
+
+## Google Earth Engine {.smaller}
+
+- **Plataforma em nuvem** para análise de dados geoespaciais
+- Fornece **conjuntos de dados** hospedados na nuvem prontos para uso e um **grande conjunto de servidores**
+- **Inclui**: catálogo de dados públicos, infraestrutura de computação, APIs geoespaciais e um servidor de aplicativos interativo
+
+<center>
+<img src="img/gee_01.png" style="width:65%"/>
+</center>
+
+## API
+
+- Forma de se **comunicar** com os servidores do Earth Engine, permitindo **computação** e **recebimento** dos resultados
+- **Linguagens**: JavaScript e Python
+
+<center>
+<img src="img/api.png" style="width:80%"/>
+</center>
+
+## API
+
+<center>
+<img src="img/gee_completo.png" style="width:100%"/>
+</center>
+
+## JavaScript
+
+- JavaScript do Earth Engine é fácil de usar e acessada pelo **Editor de Código** on-line
+- Permite **compartilhar** código facilmente e inclui **ferramentas** para mapas e criação de aplicações web
+
+<center>
+<img src="img/javascript_logo.png" style="width:30%"/>
+</center>
+
+## Editor de código
+
+<center>
+<img src="img/gee_code_editor01.png" style="width:100%"/>
+</center>
+
+## Editor de código
+
+<center>
+<img src="img/gee_code_editor01.png" style="width:100%"/>
+</center>
+
+
+## Material
+
+Todo o material está disponível no [GitHub](https://github.com/mauriciovancine/workshop-gee)
+
+<center>
+<img src="img/github_logo.png" style="width:50%"/>
+</center>
+
+:::footer
+[GitHub](https://github.com/mauriciovancine/workshop-qgis)
+:::
+
+# Dúvidas?
+
+# Material de estudo
+
+## Sites
+
+- [Welcome to Google Earth Engine](https://developers.google.com/earth-engine)
+
+## Artigos e livros
+
+
+
+## Muito obrigado!
+
+::: columns
+::: {.column width="50%"}
+**Acknowledgements**:
+
+- Yuri
+- Thiago Sanna
+- Dhemerson
+
+<center>
+<img src="img/fapesp.png" style="width:70%"/>
+</center>
+
+:::
+
+::: {.column width="50%"}
+Contact:
+
+[mauricio.vancine@gmail.com](mailto:mauricio.vancine@gmail.com)
+[mauriciovancine.github.io](https://mauriciovancine.github.io)
+
+<center>
+<img src="img/gif_frogs.gif" style="width:75%"/>
+</center>
+
+:::
+:::
+
+:::footer
+Slides by [Maurício Vancine](https://mauriciovancine.github.io/), made with [Quarto](https://quarto.org/). Code available at [GitHub](https://github.com/mauriciovancine/workshop-gee).
+:::
