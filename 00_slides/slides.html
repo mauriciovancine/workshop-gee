@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="slides_files/libs/revealjs/dist/theme/quarto.css">
   <link href="slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -322,6 +387,8 @@
       margin-right: 0; 
     }
   </style>
+  <script type="module" src="slides_files/libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+  <link href="slides_files/libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -362,6 +429,16 @@
 </div>
 </section>
 <section class="slide level2">
+<h2>Material</h2>
+<p>Todo o material está disponível no <a href="https://github.com/mauriciovancine/workshop-gee">GitHub</a></p>
+<center>
+<img src="img/github_logo.png" style="width:50%">
+</center>
+<div class="footer">
+<p><a href="https://github.com/mauriciovancine/workshop-qgis">GitHub</a></p>
+</div>
+</section>
+<section class="slide level2">
 <h2>IMPORTANTE!!!</h2>
 <p><strong>Estamos num espaço seguro e amigável</strong></p>
 <ul>
@@ -382,62 +459,278 @@
 <li><strong>Inclui</strong>: catálogo de dados públicos, infraestrutura de computação, APIs geoespaciais e um servidor de aplicativos interativo</li>
 </ul>
 <center>
-<img src="img/gee_01.png" style="width:65%">
+<img src="img/gee_01.png" style="width:60%">
 </center>
+<div class="footer">
+<p><a href="https://developers.google.com/earth-engine">Welcome to Google Earth Engine</a></p>
+</div>
 </section>
 <section class="slide level2">
 <h2>API</h2>
 <ul>
-<li>Forma de se <strong>comunicar</strong> com os servidores do Earth Engine, permitindo <strong>computação</strong> e <strong>recebimento</strong> dos resultados</li>
+<li><strong>Comunicação</strong> com os servidores do <em>Earth Engine</em></li>
 <li><strong>Linguagens</strong>: JavaScript e Python</li>
 </ul>
 <center>
-<img src="img/api.png" style="width:80%">
+<img src="img/api.png" style="width:85%">
 </center>
+<div class="footer">
+<p><a href="https://www.mindinventory.com/blog/ultimate-guide-to-api-development/">The Ultimate Guide to API Development: Types, Examples, and Best Practices</a></p>
+</div>
 </section>
 <section class="slide level2">
 <h2>API</h2>
 <center>
 <img src="img/gee_completo.png" style="width:100%">
 </center>
+<div class="footer">
+<p><a href="https://mapasabertos.com/2021/03/30/o-google-earth-engine/">Mapas Abertos</a></p>
+</div>
 </section>
 <section class="slide level2">
 <h2>JavaScript</h2>
 <ul>
-<li>JavaScript do Earth Engine é fácil de usar e acessada pelo <strong>Editor de Código</strong> on-line</li>
-<li>Permite <strong>compartilhar</strong> código facilmente e inclui <strong>ferramentas</strong> para mapas e criação de aplicações web</li>
+<li>JavaScript do Earth Engine é “fácil de usar” e é acessado pelo <strong>Editor de Código</strong> on-line</li>
+<li>Permite <strong>compartilhar</strong> código e inclui <strong>ferramentas</strong> para gráficos, mapas e aplicações web</li>
 </ul>
 <center>
 <img src="img/javascript_logo.png" style="width:30%">
 </center>
-</section>
-<section class="slide level2">
-<h2>Editor de código</h2>
-<center>
-<img src="img/gee_code_editor01.png" style="width:100%">
-</center>
-</section>
-<section class="slide level2">
-<h2>Editor de código</h2>
-<center>
-<img src="img/gee_code_editor01.png" style="width:100%">
-</center>
-</section>
-<section class="slide level2">
-<h2>Material</h2>
-<p>Todo o material está disponível no <a href="https://github.com/mauriciovancine/workshop-gee">GitHub</a></p>
-<center>
-<img src="img/github_logo.png" style="width:50%">
-</center>
 <div class="footer">
-<p><a href="https://github.com/mauriciovancine/workshop-qgis">GitHub</a></p>
+<p><a href="https://pt.wikipedia.org/wiki/JavaScript">JavaScript</a></p>
 </div>
 </section>
+<section class="slide level2">
+<h2>Editor de código</h2>
+<center>
+<img src="img/gee_code_editor01.png" style="width:93%">
+</center>
+<div class="footer">
+<p><a href="https://developers.google.com/earth-engine">Welcome to Google Earth Engine</a></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>Editor de código</h2>
+<br>
+<center>
+<img src="img/gee_code_editor02.png" style="width:100%">
+</center>
+<div class="footer">
+<p><a href="https://mapasabertos.com/2021/03/30/o-google-earth-engine/">Mapas Abertos</a></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>Editor de código</h2>
+<center>
+<img src="img/gee_code_editor03.png" style="width:100%">
+</center>
+<div class="footer">
+<p><a href="https://developers.google.com/earth-engine">Welcome to Google Earth Engine</a></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>Rodando os códigos</h2>
+<ul>
+<li>Clique em <code>Run</code> ou <code>ctrl + alt + enter</code></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">print</span>(<span class="st">'Hello World'</span>);</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<center>
+<img src="img/gee_scripts01.png" style="width:60%">
+</center>
+<div class="footer">
+<p><a href="https://link.springer.com/book/10.1007/978-3-031-26588-4">Cardille et al.&nbsp;(2024)</a></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>Salvando os scripts</h2>
+<ul>
+<li>Clique em <code>Save</code> ou <code>ctrl + s</code></li>
+</ul>
+<center>
+<img src="img/gee_scripts02.png" style="width:65%">
+</center>
+<div class="footer">
+<p><a href="https://link.springer.com/book/10.1007/978-3-031-26588-4">Cardille et al.&nbsp;(2024)</a></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>Salvando os scripts</h2>
+<p><strong>Nome de usuário</strong></p>
+<div style="font-size: 70%;">
+<ul>
+<li>Na primeira vez de uso do <em>Code Editor</em> é escolhido um <strong>nome de usuário</strong> do <em>Earth Engine</em></li>
+<li>Esse nome será usado para <strong>criar a pasta de scripts</strong> na nuvem</li>
+<li><strong>Recomendação</strong>: usuário da conta Google, pois o mesmo não pode ser alterado</li>
+</ul>
+</div>
+<center>
+<img src="img/gee_scripts03.png" style="width:33%">
+</center>
+<div class="footer">
+<p><a href="https://link.springer.com/book/10.1007/978-3-031-26588-4">Cardille et al.&nbsp;(2024)</a></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>Salvando os scripts</h2>
+<p><strong>Repositório</strong></p>
+<ul>
+<li>Depois que a pasta <em>home</em> é criada, será solicitado a criação de um <strong>repositório</strong> (pasta)</li>
+<li>Repositório ajudam <strong>organizar</strong> e <strong>compartilhar</strong> scripts</li>
+</ul>
+<center>
+<img src="img/gee_scripts04.png" style="width:35%">
+</center>
+<div class="footer">
+<p><a href="https://link.springer.com/book/10.1007/978-3-031-26588-4">Cardille et al.&nbsp;(2024)</a></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>Salvando os scripts</h2>
+<p><strong>Scripts</strong></p>
+<div style="font-size: 70%;">
+<ul>
+<li>Scripts são <strong>salvos</strong> no repositório</li>
+<li>Script aparecerá no <strong>painel do gerenciador</strong> de scripts</li>
+<li>Scripts são <strong>salvos na nuvem</strong> e estarão <strong>disponíveis</strong> quando abrir o <em>Code Editor</em></li>
+</ul>
+</div>
+<p><img data-src="img/gee_scripts05.png" class="absolute" style="top: 350px; right: 550px; width: 50%; "> <img data-src="img/gee_scripts06.png" class="absolute" style="top: 355px; right: -90px; width: 60%; "></p>
+<div class="footer">
+<p><a href="https://link.springer.com/book/10.1007/978-3-031-26588-4">Cardille et al.&nbsp;(2024)</a></p>
+</div>
+</section>
+<section>
 <section class="title-slide slide level1 center">
 <h1>Dúvidas?</h1>
 
 </section>
+<section class="slide level2 smaller">
+<h2>Introdução ao JavaScript</h2>
+<ul>
+<li>Criado em 1995, atualmente o JS é uma das linguagens mais <strong>usadas</strong> e <strong>populares</strong></li>
+<li>Linguagem <strong>interpretada</strong> (lido linha a linha) e de <strong>alto nível</strong> (próximo ao que falamos)</li>
+<li>HTML, CSS e JS formam a base da internet</li>
+<li><strong>Principal função do JS</strong>: deixar as páginas de internet dinâmicas</li>
+</ul>
+<p><img data-src="img/js_stack.webp" class="absolute" style="top: 300px; right: 400px; width: 60%; "> <img data-src="img/html_css_js.avif" class="absolute" style="top: 300px; right: -100px; width: 60%; "></p>
+<div class="footer">
+<p><a href="https://www.keentodesign.com.au/difference-between-css-html-and-javascript/">What are the differences between CSS, HTML and JavaScript?</a></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>Introdução ao JavaScript</h2>
+<p><strong>Comentários</strong></p>
+<ul>
+<li>Texto usado para explicar o código ou deixar uma nota</li>
+<li>Sempre adicionar comentários explicando cada etapa</li>
+<li><code>//</code> ou <code>ctrl + /</code> para uma ou mais linhas</li>
+<li><code>ctrl + /</code> em linhas comentadas, descomenta-as</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2" data-startfrom="257" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 256;"><span id="cb2-257"><a href=""></a><span class="co">// This is a comment!</span></span>
+<span id="cb2-258"><a href=""></a><span class="fu">print</span>(<span class="st">'Hello World'</span>)<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="expression">
 
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+<h2>Introdução ao JavaScript</h2>
+<p><strong>Variáveis</strong></p>
+<div style="font-size: 80%;">
+<div>
+<ul>
+<li class="fragment">Usadas para <strong>armazenar</strong> valores de dados</li>
+<li class="fragment"><strong>Sintaxe</strong>: palavra-chave <code>var</code>, nome da variável, igual e valor atribuído</li>
+<li class="fragment">Cada declaração do seu script deve terminar com um <strong>ponto e vírgula</strong> (opcional)</li>
+<li class="fragment">Variáveis recebem o <strong>tipo</strong> automaticamente dependendo do que foi atribuído (e.g.&nbsp;tipo <code>string</code> para texto e <code>numeric</code> para números)</li>
+</ul>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a>var city <span class="ot">=</span> <span class="st">'San Francisco'</span>;</span>
+<span id="cb3-2"><a href=""></a><span class="fu">print</span>(city);</span>
+<span id="cb3-3"><a href=""></a></span>
+<span id="cb3-4"><a href=""></a>var population <span class="ot">=</span> <span class="dv">873965</span>;</span>
+<span id="cb3-5"><a href=""></a><span class="fu">print</span>(population);</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section class="slide level2">
+<h2>Introdução ao JavaScript</h2>
+<p><strong>Listas</strong></p>
+<div style="font-size: 70%;">
+<div>
+<ul>
+<li class="fragment">Armazenam <strong>múltiplos valores</strong> em uma única variável</li>
+<li class="fragment"><strong>Sintaxe</strong>: palavra-chave <code>var</code>, nome da variável, igual e colchetes <code>[]</code>, elementos separados por vírgulas</li>
+<li class="fragment"><strong>Console</strong>: aparece com uma <strong>seta expansora</strong> (<code>▷</code>), que ao clicar se <strong>expande</strong>, mostrarando seu conteúdo</li>
+<li class="fragment">O número à esquerda de cada item indica seu <strong>índice</strong> (posição na lista), permitindo <strong>se refirir</strong> a cada item usando um <strong>valor numérico</strong></li>
+<li class="fragment"><strong>ATENÇÃO</strong>: índices começam em zero (0)</li>
+</ul>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a>var cities <span class="ot">=</span> [<span class="st">'San Francisco'</span>, <span class="st">'Los Angeles'</span>, </span>
+<span id="cb4-2"><a href=""></a>              <span class="st">'New York'</span>, <span class="st">'Atlanta'</span>];</span>
+<span id="cb4-3"><a href=""></a><span class="fu">print</span>(cities);</span>
+<span id="cb4-4"><a href=""></a></span>
+<span id="cb4-5"><a href=""></a>var cities1 <span class="ot">=</span> cities[<span class="dv">1</span>];</span>
+<span id="cb4-6"><a href=""></a><span class="fu">print</span>(cities1);</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img data-src="img/gee_list.png" class="absolute" style="top: 500px; right: 0px; width: 35%; "></p>
+</section>
+<section class="slide level2">
+<h2>Introdução ao JavaScript</h2>
+<p><strong>Objetos</strong></p>
+<div style="font-size: 70%;">
+<div>
+<ul>
+<li class="fragment">Armazenam <strong>múltiplos valores</strong> em uma única variável</li>
+<li class="fragment">Permitem armazenamento de pares de <strong>chave-valor</strong>, cada valor é acessível por sua <strong>chave</strong> (nome), não por um índice numérico</li>
+<li class="fragment"><strong>Sintaxe</strong>: palavra-chave <code>var</code>, nome da variável, igual, chaves <code>{}</code>, elementos nomeados pela chave entre aspas, dois pontos, valor atribuído e ponto e vírgula <code>;</code></li>
+<li class="fragment"><strong>Camel Case</strong>: primeira palavra em minúsculas, primeira letra da segunda palavra em maiúscula (API do Earth Engine)</li>
+<li class="fragment"><strong>Console</strong>: impresso com chaves e rótulos, permitindo a recuperação pelos rótulos</li>
+</ul>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a>var cityData <span class="ot">=</span> {</span>
+<span id="cb5-2"><a href=""></a>    <span class="st">'city'</span><span class="sc">:</span> <span class="st">'San Francisco'</span>,</span>
+<span id="cb5-3"><a href=""></a>    <span class="st">'coordinates'</span><span class="sc">:</span> [<span class="sc">-</span><span class="fl">122.4194</span>, <span class="fl">37.7749</span>],</span>
+<span id="cb5-4"><a href=""></a>    <span class="st">'population'</span><span class="sc">:</span> <span class="dv">873965</span></span>
+<span id="cb5-5"><a href=""></a>};</span>
+<span id="cb5-6"><a href=""></a><span class="fu">print</span>(cityData);</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img data-src="img/gee_object.png" class="absolute" style="top: 505px; right: -50px; width: 42%; "></p>
+</section>
+<section class="slide level2">
+<h2>Introdução ao JavaScript</h2>
+<p><strong>Funções</strong></p>
+<div style="font-size: 80%;">
+<div>
+<ul>
+<li class="fragment"><strong>Criadas</strong> pelo usuário, realizam <strong>cálculos</strong> em entradas e <strong>retornam</strong> saídas modificadas</li>
+<li class="fragment">Permitem agrupar <strong>operações e repeti-las</strong> para diferentes parâmetros, sem necessidade de reescrevê-las</li>
+<li class="fragment"><strong>Sintaxe</strong>: definidas usando a palavra-chave <code>function</code></li>
+<li class="fragment">A mesma função pode ser chamada com <strong>diferentes entradas</strong> para gerar <strong>diferentes saídas</strong></li>
+</ul>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a>var greet <span class="ot">=</span> <span class="cf">function</span>(name) {</span>
+<span id="cb6-2"><a href=""></a>return <span class="st">'Hello '</span> <span class="sc">+</span> name;</span>
+<span id="cb6-3"><a href=""></a>};</span>
+<span id="cb6-4"><a href=""></a><span class="fu">print</span>(<span class="fu">greet</span>(<span class="st">'World'</span>));</span>
+<span id="cb6-5"><a href=""></a><span class="fu">print</span>(<span class="fu">greet</span>(<span class="st">'Readers'</span>));</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section class="slide level2">
+<h2>Cliente vs servidor</h2>
+</section></section>
 <section>
 <section class="title-slide slide level1 center">
 <h1>Material de estudo</h1>
@@ -451,6 +744,7 @@
 </section>
 <section class="slide level2">
 <h2>Artigos e livros</h2>
+<p><a href="https://link.springer.com/book/10.1007/978-3-031-26588-4">Cardille et al.&nbsp;2024. Cloud-Based Remote Sensing with Google Earth Engine Fundamentals and Applications.</a></p>
 </section>
 <section class="slide level2">
 <h2>Muito obrigado!</h2>
@@ -695,6 +989,55 @@
         ]
       });
     </script>
+    <script type="ojs-module-contents">
+    eyJjb250ZW50cyI6W119
+    </script>
+    <script type="module">
+    if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+    window._ojs.paths.runtimeToDoc = "../../..";
+    window._ojs.paths.runtimeToRoot = "../../..";
+    window._ojs.paths.docToRoot = "";
+    window._ojs.selfContained = false;
+    window._ojs.runtime.interpretFromScriptTags();
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

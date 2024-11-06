@@ -15,7 +15,7 @@ format:
     logo: https://earthengine.google.com/static/images/earth-engine-logo.png
     execute:
       echo: true
-      eval: true
+      eval: false
       warning: false
       message: false
 editor: source
@@ -44,6 +44,18 @@ editor: source
 :::
 :::
 
+## Material
+
+Todo o material está disponível no [GitHub](https://github.com/mauriciovancine/workshop-gee)
+
+<center>
+<img src="img/github_logo.png" style="width:50%"/>
+</center>
+
+:::footer
+[GitHub](https://github.com/mauriciovancine/workshop-qgis)
+:::
+
 ## IMPORTANTE!!!
 
 **Estamos num espaço seguro e amigável**
@@ -65,17 +77,25 @@ editor: source
 - **Inclui**: catálogo de dados públicos, infraestrutura de computação, APIs geoespaciais e um servidor de aplicativos interativo
 
 <center>
-<img src="img/gee_01.png" style="width:65%"/>
+<img src="img/gee_01.png" style="width:60%"/>
 </center>
+
+:::footer
+[Welcome to Google Earth Engine](https://developers.google.com/earth-engine)
+:::
 
 ## API
 
-- Forma de se **comunicar** com os servidores do Earth Engine, permitindo **computação** e **recebimento** dos resultados
+- **Comunicação** com os servidores do *Earth Engine*
 - **Linguagens**: JavaScript e Python
 
 <center>
-<img src="img/api.png" style="width:80%"/>
+<img src="img/api.png" style="width:85%"/>
 </center>
+
+:::footer
+[The Ultimate Guide to API Development: Types, Examples, and Best Practices](https://www.mindinventory.com/blog/ultimate-guide-to-api-development/)
+:::
 
 ## API
 
@@ -83,41 +103,258 @@ editor: source
 <img src="img/gee_completo.png" style="width:100%"/>
 </center>
 
+:::footer
+[Mapas Abertos](https://mapasabertos.com/2021/03/30/o-google-earth-engine/)
+:::
+
 ## JavaScript
 
-- JavaScript do Earth Engine é fácil de usar e acessada pelo **Editor de Código** on-line
-- Permite **compartilhar** código facilmente e inclui **ferramentas** para mapas e criação de aplicações web
+- JavaScript do Earth Engine é "fácil de usar" e é acessado pelo **Editor de Código** on-line
+- Permite **compartilhar** código e inclui **ferramentas** para gráficos, mapas e aplicações web
 
 <center>
 <img src="img/javascript_logo.png" style="width:30%"/>
 </center>
 
-## Editor de código
-
-<center>
-<img src="img/gee_code_editor01.png" style="width:100%"/>
-</center>
+:::footer
+[JavaScript](https://pt.wikipedia.org/wiki/JavaScript)
+:::
 
 ## Editor de código
 
 <center>
-<img src="img/gee_code_editor01.png" style="width:100%"/>
-</center>
-
-
-## Material
-
-Todo o material está disponível no [GitHub](https://github.com/mauriciovancine/workshop-gee)
-
-<center>
-<img src="img/github_logo.png" style="width:50%"/>
+<img src="img/gee_code_editor01.png" style="width:93%"/>
 </center>
 
 :::footer
-[GitHub](https://github.com/mauriciovancine/workshop-qgis)
+[Welcome to Google Earth Engine](https://developers.google.com/earth-engine)
+:::
+
+## Editor de código
+
+<br>
+<center>
+<img src="img/gee_code_editor02.png" style="width:100%"/>
+</center>
+
+:::footer
+[Mapas Abertos](https://mapasabertos.com/2021/03/30/o-google-earth-engine/)
+:::
+
+## Editor de código
+
+<center>
+<img src="img/gee_code_editor03.png" style="width:100%"/>
+</center>
+
+:::footer
+[Welcome to Google Earth Engine](https://developers.google.com/earth-engine)
+:::
+
+## Rodando os códigos
+
+- Clique em `Run` ou `ctrl + alt + enter`
+
+```{r}
+print('Hello World');
+```
+
+<center>
+<img src="img/gee_scripts01.png" style="width:60%"/>
+</center>
+
+:::footer
+[Cardille et al. (2024)](https://link.springer.com/book/10.1007/978-3-031-26588-4)
+:::
+
+## Salvando os scripts
+
+- Clique em `Save` ou `ctrl + s`
+
+<center>
+<img src="img/gee_scripts02.png" style="width:65%"/>
+</center>
+
+:::footer
+[Cardille et al. (2024)](https://link.springer.com/book/10.1007/978-3-031-26588-4)
+:::
+
+## Salvando os scripts
+
+**Nome de usuário**
+
+::: {style="font-size: 70%;"}
+- Na primeira vez de uso do *Code Editor* é escolhido um **nome de usuário** do *Earth Engine*
+- Esse nome será usado para **criar a pasta de scripts** na nuvem
+- **Recomendação**: usuário da conta Google, pois o mesmo não pode ser alterado
+:::
+
+<center>
+<img src="img/gee_scripts03.png" style="width:33%"/>
+</center>
+
+:::footer
+[Cardille et al. (2024)](https://link.springer.com/book/10.1007/978-3-031-26588-4)
+:::
+
+## Salvando os scripts
+
+**Repositório**
+
+- Depois que a pasta *home* é criada, será solicitado a criação de um **repositório** (pasta)
+- Repositório ajudam **organizar** e **compartilhar** scripts
+
+<center>
+<img src="img/gee_scripts04.png" style="width:35%"/>
+</center>
+
+:::footer
+[Cardille et al. (2024)](https://link.springer.com/book/10.1007/978-3-031-26588-4)
+:::
+
+## Salvando os scripts
+
+**Scripts**
+
+::: {style="font-size: 70%;"}
+- Scripts são **salvos** no repositório
+- Script aparecerá no **painel do gerenciador** de scripts
+- Scripts são **salvos na nuvem** e estarão **disponíveis** quando abrir o *Code Editor*
+:::
+
+![](img/gee_scripts05.png){.absolute width=50% right=550 top=350}
+![](img/gee_scripts06.png){.absolute width=60% right=-90 top=355}
+
+:::footer
+[Cardille et al. (2024)](https://link.springer.com/book/10.1007/978-3-031-26588-4)
 :::
 
 # Dúvidas?
+
+## Introdução ao JavaScript {.smaller}
+
+- Criado em 1995, atualmente o JS é uma das linguagens mais **usadas** e **populares**
+- Linguagem **interpretada** (lido linha a linha) e de **alto nível** (próximo ao que falamos)
+- HTML, CSS e JS formam a base da internet
+- **Principal função do JS**: deixar as páginas de internet dinâmicas
+
+![](img/js_stack.webp){.absolute width=60% right=400 top=300}
+![](img/html_css_js.avif){.absolute width=60% right=-100 top=300}
+
+:::footer
+[What are the differences between CSS, HTML and JavaScript?](https://www.keentodesign.com.au/difference-between-css-html-and-javascript/)
+:::
+
+## Introdução ao JavaScript
+
+**Comentários**
+
+- Texto usado para explicar o código ou deixar uma nota
+- Sempre adicionar comentários explicando cada etapa
+- `//` ou `ctrl + /` para uma ou mais linhas
+- `ctrl + /` em linhas comentadas, descomenta-as
+
+```{ojs}
+// This is a comment!
+print('Hello World');
+```
+
+## Introdução ao JavaScript
+
+**Variáveis**
+
+::: {style="font-size: 80%;"}
+::: {.incremental}
+- Usadas para **armazenar** valores de dados
+- **Sintaxe**: palavra-chave `var`, nome da variável, igual e valor atribuído
+- Cada declaração do seu script deve terminar com um **ponto e vírgula** (opcional)
+- Variáveis recebem o **tipo** automaticamente dependendo do que foi atribuído (e.g. tipo `string` para texto e `numeric` para números)
+:::
+:::
+
+```{r}
+var city = 'San Francisco';
+print(city);
+
+var population = 873965;
+print(population);
+```
+
+## Introdução ao JavaScript
+
+**Listas**
+
+::: {style="font-size: 70%;"}
+::: {.incremental}
+- Armazenam **múltiplos valores** em uma única variável
+- **Sintaxe**: palavra-chave `var`, nome da variável, igual e colchetes `[]`, elementos separados por vírgulas
+- **Console**: aparece com uma **seta expansora** (`▷`), que ao clicar se **expande**, mostrarando seu
+conteúdo
+- O número à esquerda de cada item indica seu **índice** (posição na lista), permitindo **se refirir** a cada item usando um **valor numérico**
+- **ATENÇÃO**: índices começam em zero (0)
+:::
+:::
+
+```{r}
+var cities = ['San Francisco', 'Los Angeles', 
+              'New York', 'Atlanta'];
+print(cities);
+
+var cities1 = cities[1];
+print(cities1);
+```
+
+![](img/gee_list.png){.absolute width=35% right=0 top=500}
+
+## Introdução ao JavaScript
+
+**Objetos**
+
+::: {style="font-size: 70%;"}
+::: {.incremental}
+- Armazenam **múltiplos valores** em uma única variável
+- Permitem armazenamento de pares de **chave-valor**, cada valor é acessível por sua **chave** (nome), não por um índice numérico
+- **Sintaxe**: palavra-chave `var`, nome da variável, igual, chaves `{}`, elementos nomeados pela chave entre aspas, dois pontos, valor atribuído e ponto e vírgula `;`
+- **Camel Case**: primeira palavra em minúsculas, primeira letra da segunda palavra em maiúscula (API do Earth Engine)
+- **Console**: impresso com chaves e rótulos, permitindo a recuperação pelos rótulos
+:::
+:::
+
+```{r}
+var cityData = {
+    'city': 'San Francisco',
+    'coordinates': [-122.4194, 37.7749],
+    'population': 873965
+};
+print(cityData);
+```
+
+![](img/gee_object.png){.absolute width=42% right=-50 top=505}
+
+## Introdução ao JavaScript
+
+**Funções**
+
+::: {style="font-size: 80%;"}
+::: {.incremental}
+- **Criadas** pelo usuário, realizam **cálculos** em entradas e **retornam** saídas modificadas
+- Permitem agrupar **operações e repeti-las** para diferentes parâmetros, sem necessidade de reescrevê-las
+- **Sintaxe**: definidas usando a palavra-chave `function`
+- A mesma função pode ser chamada com **diferentes entradas** para gerar **diferentes saídas**
+:::
+:::
+
+```{r}
+var greet = function(name) {
+return 'Hello ' + name;
+};
+print(greet('World'));
+print(greet('Readers'));
+```
+
+## Cliente vs servidor    
+
+
 
 # Material de estudo
 
@@ -127,7 +364,7 @@ Todo o material está disponível no [GitHub](https://github.com/mauriciovancine
 
 ## Artigos e livros
 
-
+[Cardille et al. 2024. Cloud-Based Remote Sensing with Google Earth Engine Fundamentals and Applications. ](https://link.springer.com/book/10.1007/978-3-031-26588-4)
 
 ## Muito obrigado!
 
