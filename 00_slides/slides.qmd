@@ -74,8 +74,9 @@ Todo o material está disponível no [GitHub](https://github.com/mauriciovancine
 
 - **Plataforma em nuvem** para análise de dados geoespaciais
 - Fornece **conjuntos de dados** hospedados na nuvem prontos para uso e um **grande conjunto de servidores**
-- **Inclui**: catálogo de dados públicos, infraestrutura de computação, APIs geoespaciais e um servidor de aplicativos interativo
+- **Inclui**: catálogo de dados públicos, infraestrutura de computação, API (*Application Programming Interface*) geoespacial e servidor de aplicativos interativos
 
+![](img/gee_logo_bg.png){.absolute width=10% right=470 top=335}
 <center>
 <img src="img/gee_01.png" style="width:60%"/>
 </center>
@@ -119,6 +120,116 @@ Todo o material está disponível no [GitHub](https://github.com/mauriciovancine
 :::footer
 [JavaScript](https://pt.wikipedia.org/wiki/JavaScript)
 :::
+
+## Google Cloud
+
+- Cloud project
+
+<center>
+<img src="img/gee_google_cloud01.png" style="width:100%"/>
+</center>
+
+:::footer
+[Google Cloud](https://console.cloud.google.com)
+:::
+
+## Google Cloud
+
+**1. Obtenha um projeto**
+
+<center>
+<img src="img/gee_google_cloud02.png" style="width:100%"/>
+</center>
+
+:::footer
+[Google Cloud](https://console.cloud.google.com)
+:::
+
+## Google Cloud
+
+**1. Obtenha um projeto**
+
+<center>
+<img src="img/gee_google_cloud03.png" style="width:100%"/>
+</center>
+
+:::footer
+[Google Cloud](https://console.cloud.google.com)
+:::
+
+## Google Cloud
+
+**1. Obtenha um projeto**
+
+<center>
+<img src="img/gee_google_cloud04.png" style="width:100%"/>
+</center>
+
+:::footer
+[Google Cloud](https://console.cloud.google.com)
+:::
+
+## Google Cloud
+
+**1. Obtenha um projeto**
+
+<center>
+<img src="img/gee_google_cloud05.png" style="width:100%"/>
+</center>
+
+:::footer
+[Google Cloud](https://console.cloud.google.com)
+:::
+
+## Google Cloud
+
+**1. Obtenha um projeto**
+
+<center>
+<img src="img/gee_google_cloud06.png" style="width:100%"/>
+</center>
+
+:::footer
+[Google Cloud](https://console.cloud.google.com)
+:::
+
+## Google Cloud
+
+**2. Habilite a API do Earth Engine**
+
+<center>
+<img src="img/gee_google_cloud07.png" style="width:100%"/>
+</center>
+
+:::footer
+[Google Cloud](https://console.cloud.google.com)
+:::
+
+## Google Cloud
+
+**2. Habilite a API do Earth Engine**
+
+<center>
+<img src="img/gee_google_cloud08.png" style="width:100%"/>
+</center>
+
+:::footer
+[Google Cloud](https://console.cloud.google.com)
+:::
+
+## Google Cloud
+
+**2. Habilite a API do Earth Engine**
+
+<center>
+<img src="img/gee_google_cloud09.png" style="width:100%"/>
+</center>
+
+:::footer
+[Google Cloud](https://console.cloud.google.com)
+:::
+
+# Acho que tudo certo...
 
 ## Editor de código
 
@@ -264,12 +375,10 @@ print('Hello World');
 **Variáveis**
 
 ::: {style="font-size: 80%;"}
-::: {.incremental}
 - Usadas para **armazenar** valores de dados
 - **Sintaxe**: palavra-chave `var`, nome da variável, igual e valor atribuído
 - Cada declaração do seu script deve terminar com um **ponto e vírgula** (opcional)
 - Variáveis recebem o **tipo** automaticamente dependendo do que foi atribuído (e.g. tipo `string` para texto e `numeric` para números)
-:::
 :::
 
 ```{r}
@@ -285,14 +394,12 @@ print(population);
 **Listas**
 
 ::: {style="font-size: 70%;"}
-::: {.incremental}
 - Armazenam **múltiplos valores** em uma única variável
 - **Sintaxe**: palavra-chave `var`, nome da variável, igual e colchetes `[]`, elementos separados por vírgulas
 - **Console**: aparece com uma **seta expansora** (`▷`), que ao clicar se **expande**, mostrarando seu
 conteúdo
 - O número à esquerda de cada item indica seu **índice** (posição na lista), permitindo **se refirir** a cada item usando um **valor numérico**
 - **ATENÇÃO**: índices começam em zero (0)
-:::
 :::
 
 ```{r}
@@ -311,13 +418,11 @@ print(cities1);
 **Objetos**
 
 ::: {style="font-size: 70%;"}
-::: {.incremental}
 - Armazenam **múltiplos valores** em uma única variável
 - Permitem armazenamento de pares de **chave-valor**, cada valor é acessível por sua **chave** (nome), não por um índice numérico
 - **Sintaxe**: palavra-chave `var`, nome da variável, igual, chaves `{}`, elementos nomeados pela chave entre aspas, dois pontos, valor atribuído e ponto e vírgula `;`
 - **Camel Case**: primeira palavra em minúsculas, primeira letra da segunda palavra em maiúscula (API do Earth Engine)
 - **Console**: impresso com chaves e rótulos, permitindo a recuperação pelos rótulos
-:::
 :::
 
 ```{r}
@@ -336,12 +441,10 @@ print(cityData);
 **Funções**
 
 ::: {style="font-size: 80%;"}
-::: {.incremental}
 - **Criadas** pelo usuário, realizam **cálculos** em entradas e **retornam** saídas modificadas
 - Permitem agrupar **operações e repeti-las** para diferentes parâmetros, sem necessidade de reescrevê-las
 - **Sintaxe**: definidas usando a palavra-chave `function`
 - A mesma função pode ser chamada com **diferentes entradas** para gerar **diferentes saídas**
-:::
 :::
 
 ```{r}
