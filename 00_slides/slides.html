@@ -452,7 +452,7 @@
 </div>
 </section>
 <section class="slide level2 smaller">
-<h2>Google Earth Engine</h2>
+<h2>Google Earth Engine (GEE)</h2>
 <ul>
 <li><strong>Plataforma em nuvem</strong> para análise de dados geoespaciais</li>
 <li>Fornece <strong>conjuntos de dados</strong> hospedados na nuvem prontos para uso e um <strong>grande conjunto de servidores</strong></li>
@@ -470,7 +470,7 @@
 <h2>API</h2>
 <ul>
 <li><strong>Comunicação</strong> com os servidores do <em>Earth Engine</em></li>
-<li><strong>Linguagens</strong>: JavaScript e Python</li>
+<li><strong>Linguagens</strong>: JavaScript (JS) e Python</li>
 </ul>
 <center>
 <img src="img/api.png" style="width:85%">
@@ -491,7 +491,7 @@
 <section class="slide level2">
 <h2>JavaScript</h2>
 <ul>
-<li>JavaScript do Earth Engine é “fácil de usar” e é acessado pelo <strong>Editor de Código</strong> on-line</li>
+<li>JavaScript do <em>Earth Engine</em> é “fácil de usar” e é acessado pelo <strong>Editor de Código</strong> on-line</li>
 <li>Permite <strong>compartilhar</strong> código e inclui <strong>ferramentas</strong> para gráficos, mapas e aplicações web</li>
 </ul>
 <center>
@@ -503,9 +503,7 @@
 </section>
 <section class="slide level2">
 <h2>Google Cloud</h2>
-<ul>
-<li>Cloud project</li>
-</ul>
+<p><strong>Cloud project</strong></p>
 <center>
 <img src="img/gee_google_cloud01.png" style="width:100%">
 </center>
@@ -619,11 +617,52 @@
 </section>
 <section class="slide level2">
 <h2>Editor de código</h2>
+<br>
 <center>
-<img src="img/gee_code_editor03.png" style="width:100%">
+<img src="img/gee-code-editor-01_up.png" style="width:100%">
 </center>
 <div class="footer">
-<p><a href="https://developers.google.com/earth-engine">Welcome to Google Earth Engine</a></p>
+<p><a href="https://github.com/npec/AWOC2020-GEE-Training">AWOC2020 GEE Training</a></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>Editor de código</h2>
+<br>
+<center>
+<img src="img/gee-code-editor-02_up.png" style="width:100%">
+</center>
+<div class="footer">
+<p><a href="https://github.com/npec/AWOC2020-GEE-Training">AWOC2020 GEE Training</a></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>Editor de código</h2>
+<br>
+<center>
+<img src="img/gee-code-editor-03_up.png" style="width:100%">
+</center>
+<div class="footer">
+<p><a href="https://github.com/npec/AWOC2020-GEE-Training">AWOC2020 GEE Training</a></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>Editor de código</h2>
+<br>
+<center>
+<img src="img/gee-code-editor-04_up.png" style="width:100%">
+</center>
+<div class="footer">
+<p><a href="https://github.com/npec/AWOC2020-GEE-Training">AWOC2020 GEE Training</a></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>Editor de código</h2>
+<br>
+<center>
+<img src="img/gee-code-editor-05_up.png" style="width:100%">
+</center>
+<div class="footer">
+<p><a href="https://github.com/npec/AWOC2020-GEE-Training">AWOC2020 GEE Training</a></p>
 </div>
 </section>
 <section class="slide level2">
@@ -645,9 +684,10 @@
 <h2>Salvando os scripts</h2>
 <ul>
 <li>Clique em <code>Save</code> ou <code>ctrl + s</code></li>
+<li><strong>IMPORTANTE</strong>: O salvamento não é automático!</li>
 </ul>
 <center>
-<img src="img/gee_scripts02.png" style="width:65%">
+<img src="img/gee_scripts02.png" style="width:60%">
 </center>
 <div class="footer">
 <p><a href="https://link.springer.com/book/10.1007/978-3-031-26588-4">Cardille et al.&nbsp;(2024)</a></p>
@@ -727,10 +767,31 @@
 <li><code>ctrl + /</code> em linhas comentadas, descomenta-as</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2" data-startfrom="368" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 367;"><span id="cb2-368"><a href=""></a><span class="co">// This is a comment!</span></span>
-<span id="cb2-369"><a href=""></a><span class="fu">print</span>(<span class="st">'Hello World'</span>)<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2" data-startfrom="414" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 413;"><span id="cb2-414"><a href=""></a><span class="co">// This is a comment!</span></span>
+<span id="cb2-415"><a href=""></a><span class="fu">print</span>(<span class="st">'Hello World'</span>)<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+<h2>Introdução ao JavaScript</h2>
+<p><strong>Comentários em múltiplas linhas</strong></p>
+<ul>
+<li><code>/**</code> início</li>
+<li>Comentários</li>
+<li><code>**/</code> fim</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3" data-startfrom="427" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 426;"><span id="cb3-427"><a href=""></a><span class="co">/** </span></span>
+<span id="cb3-428"><a href=""></a><span class="co">This is a comment in multiple lines!</span></span>
+<span id="cb3-429"><a href=""></a><span class="co">Nothing here will be executed</span></span>
+<span id="cb3-430"><a href=""></a><span class="co">**/</span></span>
+<span id="cb3-431"><a href=""></a><span class="fu">print</span>(<span class="st">'Hello World'</span>)<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="expression">
 
 </div>
 </div>
@@ -748,11 +809,11 @@
 </ul>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a>var city <span class="ot">=</span> <span class="st">'San Francisco'</span>;</span>
-<span id="cb3-2"><a href=""></a><span class="fu">print</span>(city);</span>
-<span id="cb3-3"><a href=""></a></span>
-<span id="cb3-4"><a href=""></a>var population <span class="ot">=</span> <span class="dv">873965</span>;</span>
-<span id="cb3-5"><a href=""></a><span class="fu">print</span>(population);</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a>var city <span class="ot">=</span> <span class="st">'San Francisco'</span>;</span>
+<span id="cb4-2"><a href=""></a><span class="fu">print</span>(city);</span>
+<span id="cb4-3"><a href=""></a></span>
+<span id="cb4-4"><a href=""></a>var population <span class="ot">=</span> <span class="dv">873965</span>;</span>
+<span id="cb4-5"><a href=""></a><span class="fu">print</span>(population);</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section class="slide level2">
@@ -768,14 +829,17 @@
 </ul>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a>var cities <span class="ot">=</span> [<span class="st">'San Francisco'</span>, <span class="st">'Los Angeles'</span>, </span>
-<span id="cb4-2"><a href=""></a>              <span class="st">'New York'</span>, <span class="st">'Atlanta'</span>];</span>
-<span id="cb4-3"><a href=""></a><span class="fu">print</span>(cities);</span>
-<span id="cb4-4"><a href=""></a></span>
-<span id="cb4-5"><a href=""></a>var cities1 <span class="ot">=</span> cities[<span class="dv">1</span>];</span>
-<span id="cb4-6"><a href=""></a><span class="fu">print</span>(cities1);</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a>var cities <span class="ot">=</span> [<span class="st">'San Francisco'</span>, <span class="st">'Los Angeles'</span>, </span>
+<span id="cb5-2"><a href=""></a>              <span class="st">'New York'</span>, <span class="st">'Atlanta'</span>];</span>
+<span id="cb5-3"><a href=""></a><span class="fu">print</span>(cities);</span>
+<span id="cb5-4"><a href=""></a></span>
+<span id="cb5-5"><a href=""></a>var cities1 <span class="ot">=</span> cities[<span class="dv">1</span>];</span>
+<span id="cb5-6"><a href=""></a><span class="fu">print</span>(cities1);</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img data-src="img/gee_list.png" class="absolute" style="top: 500px; right: 0px; width: 35%; "></p>
+<div class="footer">
+<p><a href="https://link.springer.com/book/10.1007/978-3-031-26588-4">Cardille et al.&nbsp;(2024)</a></p>
+</div>
 </section>
 <section class="slide level2">
 <h2>Introdução ao JavaScript</h2>
@@ -785,19 +849,22 @@
 <li>Armazenam <strong>múltiplos valores</strong> em uma única variável</li>
 <li>Permitem armazenamento de pares de <strong>chave-valor</strong>, cada valor é acessível por sua <strong>chave</strong> (nome), não por um índice numérico</li>
 <li><strong>Sintaxe</strong>: palavra-chave <code>var</code>, nome da variável, igual, chaves <code>{}</code>, elementos nomeados pela chave entre aspas, dois pontos, valor atribuído e ponto e vírgula <code>;</code></li>
-<li><strong>Camel Case</strong>: primeira palavra em minúsculas, primeira letra da segunda palavra em maiúscula (API do Earth Engine)</li>
+<li><strong>Camel Case</strong>: primeira palavra em minúsculas, primeira letra da segunda palavra em maiúscula (API do <em>Earth Engine</em>)</li>
 <li><strong>Console</strong>: impresso com chaves e rótulos, permitindo a recuperação pelos rótulos</li>
 </ul>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a>var cityData <span class="ot">=</span> {</span>
-<span id="cb5-2"><a href=""></a>    <span class="st">'city'</span><span class="sc">:</span> <span class="st">'San Francisco'</span>,</span>
-<span id="cb5-3"><a href=""></a>    <span class="st">'coordinates'</span><span class="sc">:</span> [<span class="sc">-</span><span class="fl">122.4194</span>, <span class="fl">37.7749</span>],</span>
-<span id="cb5-4"><a href=""></a>    <span class="st">'population'</span><span class="sc">:</span> <span class="dv">873965</span></span>
-<span id="cb5-5"><a href=""></a>};</span>
-<span id="cb5-6"><a href=""></a><span class="fu">print</span>(cityData);</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a>var cityData <span class="ot">=</span> {</span>
+<span id="cb6-2"><a href=""></a>    <span class="st">'city'</span><span class="sc">:</span> <span class="st">'San Francisco'</span>,</span>
+<span id="cb6-3"><a href=""></a>    <span class="st">'coordinates'</span><span class="sc">:</span> [<span class="sc">-</span><span class="fl">122.4194</span>, <span class="fl">37.7749</span>],</span>
+<span id="cb6-4"><a href=""></a>    <span class="st">'population'</span><span class="sc">:</span> <span class="dv">873965</span></span>
+<span id="cb6-5"><a href=""></a>};</span>
+<span id="cb6-6"><a href=""></a><span class="fu">print</span>(cityData);</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img data-src="img/gee_object.png" class="absolute" style="top: 505px; right: -50px; width: 42%; "></p>
+<div class="footer">
+<p><a href="https://link.springer.com/book/10.1007/978-3-031-26588-4">Cardille et al.&nbsp;(2024)</a></p>
+</div>
 </section>
 <section class="slide level2">
 <h2>Introdução ao JavaScript</h2>
@@ -811,15 +878,72 @@
 </ul>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a>var greet <span class="ot">=</span> <span class="cf">function</span>(name) {</span>
-<span id="cb6-2"><a href=""></a>return <span class="st">'Hello '</span> <span class="sc">+</span> name;</span>
-<span id="cb6-3"><a href=""></a>};</span>
-<span id="cb6-4"><a href=""></a><span class="fu">print</span>(<span class="fu">greet</span>(<span class="st">'World'</span>));</span>
-<span id="cb6-5"><a href=""></a><span class="fu">print</span>(<span class="fu">greet</span>(<span class="st">'Readers'</span>));</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a>var greet <span class="ot">=</span> <span class="cf">function</span>(name) {</span>
+<span id="cb7-2"><a href=""></a>return <span class="st">'Hello '</span> <span class="sc">+</span> name;</span>
+<span id="cb7-3"><a href=""></a>};</span>
+<span id="cb7-4"><a href=""></a><span class="fu">print</span>(<span class="fu">greet</span>(<span class="st">'World'</span>));</span>
+<span id="cb7-5"><a href=""></a><span class="fu">print</span>(<span class="fu">greet</span>(<span class="st">'Readers'</span>));</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="footer">
+<p><a href="https://link.springer.com/book/10.1007/978-3-031-26588-4">Cardille et al.&nbsp;(2024)</a></p>
+</div>
+</section></section>
+<section>
+<section class="title-slide slide level1 center">
+<h1>Client-side e server-side</h1>
+
+</section>
+<section class="slide level2 smaller">
+<h2>Cliente vs servidor</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Client-side</strong></p>
+<ul>
+<li>Operações realizadas no <strong>navegador</strong> (<em>Editor de código</em> - API JS)</li>
+<li>Sintaxe e funções do JS, com requisições e alocamentos locais</li>
+<li>Manipulação de strings, números e programação (loops e controle de fluxo)</li>
+</ul>
+<center>
+<img src="img/gee_client_side.png" style="width:100%">
+</center>
+</div><div class="column" style="width:50%;">
+<p><strong>Server-side</strong></p>
+<ul>
+<li>Operações realizadas nos <strong>servidores da Google</strong></li>
+<li>Todas as funções começam com <code>ee.*</code>, com requisições aos servidores</li>
+<li>Manipulação de dados dos catálogos nos servidores</li>
+</ul>
+<center>
+<img src="img/gee_server_side.png" style="width:100%">
+</center>
+</div>
+</div>
+<div class="footer">
+<p><a href="https://medium.com/@pulakeshpradhan/server-side-vs-client-side-objects-in-google-earth-engine-b45d119f72cf">Server-Side vs Client-Side Objects in Google Earth Engine</a></p>
 </div>
 </section>
 <section class="slide level2">
 <h2>Cliente vs servidor</h2>
+<ul>
+<li>Ao usar as APIs do Earth Engine — JavaScript ou Python — você está construindo uma cadeia de comandos para enviar aos servidores do Google e depois receber o resultado de volta</li>
+<li>O código deve ser estruturado para enviar todo o trabalho pesado para o Google e manter o processamento fora dos recursos locais</li>
+<li>Em outras palavras, seu trabalho no Editor de Código é fazer uma descrição de uma computação. Todos os objetos ee são apenas marcadores de posição para objetos do lado do servidor — seu valor real não existe localmente em seu computador.</li>
+<li>Para ver ou usar o valor real, ele precisa ser avaliado pelo servidor. Se você imprimir um objeto do Earth Engine, ele chamará getInfo para avaliar e retornar o valor.</li>
+<li>Em contraste, você também pode trabalhar com listas ou números JavaScript/Python localmente e fazer coisas básicas de JavaScript/Python com eles, como somar números ou fazer loop sobre itens.</li>
+<li>Esses são objetos do lado do cliente. Sempre que você traz um objeto do lado do servidor para seu ambiente local, há um custo computacional.</li>
+</ul>
+</section>
+<section class="slide level2">
+<h2>Estrutura de um código no GEE</h2>
+<ol type="1">
+<li><strong>Importar</strong>: dados a partir do catálogo, seleção e pré-processamento (selecionar imagens com poucas nuvens em uma janela de tempo específica)</li>
+<li><strong>Processar</strong>: operações de processamento que resultam em produtos (índices, reduções…)</li>
+<li><strong>Visualizar</strong>: mapa dos dados e resultados (conferência das análises)</li>
+<li><strong>Exportar</strong>: dados obtidos do processamento enviados para o Google Drive (de onde baixados para uso num SIG)</li>
+</ol>
+<div class="footer">
+<p><a href="https://mapasabertos.com/2021/03/30/o-google-earth-engine/">Mapas Abertos</a></p>
+</div>
 </section></section>
 <section>
 <section class="title-slide slide level1 center">
@@ -832,9 +956,12 @@
 <li><a href="https://developers.google.com/earth-engine">Welcome to Google Earth Engine</a></li>
 </ul>
 </section>
-<section class="slide level2">
+<section class="slide level2 smaller">
 <h2>Artigos e livros</h2>
-<p><a href="https://link.springer.com/book/10.1007/978-3-031-26588-4">Cardille et al.&nbsp;2024. Cloud-Based Remote Sensing with Google Earth Engine Fundamentals and Applications.</a></p>
+<p><br></p>
+<ul>
+<li><a href="https://doi.org/10.1007/978-3-031-26588-4">Cardille, J.A., Crowley, M.A., Saah, D., Clinton, N.E. (Eds.), 2024. Cloud-Based Remote Sensing with Google Earth Engine: Fundamentals and Applications. Springer International Publishing, Cham.</a></li>
+</ul>
 </section>
 <section class="slide level2">
 <h2>Muito obrigado!</h2>

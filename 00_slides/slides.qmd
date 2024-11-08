@@ -70,7 +70,7 @@ Todo o material está disponível no [GitHub](https://github.com/mauriciovancine
 [\@allison_horst](https://twitter.com/allison_horst)
 :::
 
-## Google Earth Engine {.smaller}
+## Google Earth Engine (GEE) {.smaller}
 
 - **Plataforma em nuvem** para análise de dados geoespaciais
 - Fornece **conjuntos de dados** hospedados na nuvem prontos para uso e um **grande conjunto de servidores**
@@ -88,7 +88,7 @@ Todo o material está disponível no [GitHub](https://github.com/mauriciovancine
 ## API
 
 - **Comunicação** com os servidores do *Earth Engine*
-- **Linguagens**: JavaScript e Python
+- **Linguagens**: JavaScript (JS) e Python
 
 <center>
 <img src="img/api.png" style="width:85%"/>
@@ -110,7 +110,7 @@ Todo o material está disponível no [GitHub](https://github.com/mauriciovancine
 
 ## JavaScript
 
-- JavaScript do Earth Engine é "fácil de usar" e é acessado pelo **Editor de Código** on-line
+- JavaScript do *Earth Engine* é "fácil de usar" e é acessado pelo **Editor de Código** on-line
 - Permite **compartilhar** código e inclui **ferramentas** para gráficos, mapas e aplicações web
 
 <center>
@@ -123,7 +123,7 @@ Todo o material está disponível no [GitHub](https://github.com/mauriciovancine
 
 ## Google Cloud
 
-- Cloud project
+**Cloud project**
 
 <center>
 <img src="img/gee_google_cloud01.png" style="width:100%"/>
@@ -254,12 +254,57 @@ Todo o material está disponível no [GitHub](https://github.com/mauriciovancine
 
 ## Editor de código
 
+<br>
 <center>
-<img src="img/gee_code_editor03.png" style="width:100%"/>
+<img src="img/gee-code-editor-01_up.png" style="width:100%"/>
 </center>
 
 :::footer
-[Welcome to Google Earth Engine](https://developers.google.com/earth-engine)
+[AWOC2020 GEE Training](https://github.com/npec/AWOC2020-GEE-Training)
+:::
+
+## Editor de código
+
+<br>
+<center>
+<img src="img/gee-code-editor-02_up.png" style="width:100%"/>
+</center>
+
+:::footer
+[AWOC2020 GEE Training](https://github.com/npec/AWOC2020-GEE-Training)
+:::
+
+## Editor de código
+
+<br>
+<center>
+<img src="img/gee-code-editor-03_up.png" style="width:100%"/>
+</center>
+
+:::footer
+[AWOC2020 GEE Training](https://github.com/npec/AWOC2020-GEE-Training)
+:::
+
+## Editor de código
+
+<br>
+<center>
+<img src="img/gee-code-editor-04_up.png" style="width:100%"/>
+</center>
+
+:::footer
+[AWOC2020 GEE Training](https://github.com/npec/AWOC2020-GEE-Training)
+:::
+
+## Editor de código
+
+<br>
+<center>
+<img src="img/gee-code-editor-05_up.png" style="width:100%"/>
+</center>
+
+:::footer
+[AWOC2020 GEE Training](https://github.com/npec/AWOC2020-GEE-Training)
 :::
 
 ## Rodando os códigos
@@ -281,9 +326,10 @@ print('Hello World');
 ## Salvando os scripts
 
 - Clique em `Save` ou `ctrl + s`
+- **IMPORTANTE**: O salvamento não é automático!
 
 <center>
-<img src="img/gee_scripts02.png" style="width:65%"/>
+<img src="img/gee_scripts02.png" style="width:60%"/>
 </center>
 
 :::footer
@@ -372,6 +418,22 @@ print('Hello World');
 
 ## Introdução ao JavaScript
 
+**Comentários em múltiplas linhas**
+
+- `/**` início
+- Comentários
+- `**/` fim
+
+```{ojs}
+/** 
+This is a comment in multiple lines!
+Nothing here will be executed
+**/
+print('Hello World');
+```
+
+## Introdução ao JavaScript
+
 **Variáveis**
 
 ::: {style="font-size: 80%;"}
@@ -413,6 +475,10 @@ print(cities1);
 
 ![](img/gee_list.png){.absolute width=35% right=0 top=500}
 
+:::footer
+[Cardille et al. (2024)](https://link.springer.com/book/10.1007/978-3-031-26588-4)
+:::
+
 ## Introdução ao JavaScript
 
 **Objetos**
@@ -421,7 +487,7 @@ print(cities1);
 - Armazenam **múltiplos valores** em uma única variável
 - Permitem armazenamento de pares de **chave-valor**, cada valor é acessível por sua **chave** (nome), não por um índice numérico
 - **Sintaxe**: palavra-chave `var`, nome da variável, igual, chaves `{}`, elementos nomeados pela chave entre aspas, dois pontos, valor atribuído e ponto e vírgula `;`
-- **Camel Case**: primeira palavra em minúsculas, primeira letra da segunda palavra em maiúscula (API do Earth Engine)
+- **Camel Case**: primeira palavra em minúsculas, primeira letra da segunda palavra em maiúscula (API do *Earth Engine*)
 - **Console**: impresso com chaves e rótulos, permitindo a recuperação pelos rótulos
 :::
 
@@ -435,6 +501,10 @@ print(cityData);
 ```
 
 ![](img/gee_object.png){.absolute width=42% right=-50 top=505}
+
+:::footer
+[Cardille et al. (2024)](https://link.springer.com/book/10.1007/978-3-031-26588-4)
+:::
 
 ## Introdução ao JavaScript
 
@@ -455,9 +525,63 @@ print(greet('World'));
 print(greet('Readers'));
 ```
 
+:::footer
+[Cardille et al. (2024)](https://link.springer.com/book/10.1007/978-3-031-26588-4)
+:::
+
+# Client-side e server-side
+
+## Cliente vs servidor{.smaller}
+
+::: columns
+::: {.column width="50%"}
+**Client-side**
+
+- Operações realizadas no **navegador** (*Editor de código* - API JS)
+- Sintaxe e funções do JS, com requisições e alocamentos locais
+- Manipulação de strings, números e programação (loops e controle de fluxo)
+
+<center>
+<img src="img/gee_client_side.png" style="width:100%"/>
+</center>
+:::
+
+::: {.column width="50%"}
+**Server-side**
+
+- Operações realizadas nos **servidores da Google**
+- Todas as funções começam com `ee.*`, com requisições aos servidores
+- Manipulação de dados dos catálogos nos servidores
+
+<center>
+<img src="img/gee_server_side.png" style="width:100%"/>
+</center>
+:::
+:::
+
+:::footer
+[Server-Side vs Client-Side Objects in Google Earth Engine](https://medium.com/@pulakeshpradhan/server-side-vs-client-side-objects-in-google-earth-engine-b45d119f72cf)
+:::
+
 ## Cliente vs servidor    
 
+- Ao usar as APIs do Earth Engine — JavaScript ou Python — você está construindo uma cadeia de comandos para enviar aos servidores do Google e depois receber o resultado de volta
+- O código deve ser estruturado para enviar todo o trabalho pesado para o Google e manter o processamento fora dos recursos locais
+- Em outras palavras, seu trabalho no Editor de Código é fazer uma descrição de uma computação. Todos os objetos ee são apenas marcadores de posição para objetos do lado do servidor — seu valor real não existe localmente em seu computador. 
+- Para ver ou usar o valor real, ele precisa ser avaliado pelo servidor. Se você imprimir um objeto do Earth Engine, ele chamará getInfo para avaliar e retornar o valor. 
+- Em contraste, você também pode trabalhar com listas ou números JavaScript/Python localmente e fazer coisas básicas de JavaScript/Python com eles, como somar números ou fazer loop sobre itens. 
+- Esses são objetos do lado do cliente. Sempre que você traz um objeto do lado do servidor para seu ambiente local, há um custo computacional.
 
+## Estrutura de um código no GEE
+
+1. **Importar**: dados a partir do catálogo, seleção e pré-processamento (selecionar imagens com poucas nuvens em uma janela de tempo específica)
+1. **Processar**: operações de processamento que resultam em produtos (índices, reduções...)
+1. **Visualizar**: mapa dos dados e resultados (conferência das análises)
+1. **Exportar**: dados obtidos do processamento enviados para o Google Drive (de onde baixados para uso num SIG)
+
+:::footer
+[Mapas Abertos](https://mapasabertos.com/2021/03/30/o-google-earth-engine/)
+:::
 
 # Material de estudo
 
@@ -465,9 +589,14 @@ print(greet('Readers'));
 
 - [Welcome to Google Earth Engine](https://developers.google.com/earth-engine)
 
-## Artigos e livros
+## Artigos e livros {.smaller}
 
-[Cardille et al. 2024. Cloud-Based Remote Sensing with Google Earth Engine Fundamentals and Applications. ](https://link.springer.com/book/10.1007/978-3-031-26588-4)
+<br>
+
+- [Cardille, J.A., Crowley, M.A., Saah, D., Clinton, N.E. (Eds.), 2024. Cloud-Based Remote Sensing with Google Earth Engine: Fundamentals and Applications. Springer International Publishing, Cham.](https://doi.org/10.1007/978-3-031-26588-4)
+
+
+
 
 ## Muito obrigado!
 
