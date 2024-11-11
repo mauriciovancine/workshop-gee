@@ -666,6 +666,84 @@
 </div>
 </section>
 <section class="slide level2">
+<h2>Editor de código</h2>
+<p><strong>Google Earth Engine Autosave</strong></p>
+<ul>
+<li>Salva automaticamente o código no GEE, evitando perda ao fechar a aba ou em caso de travamento</li>
+<li>Armazena o código localmente e o restaura ao reabrir o arquivo, usando o caminho absoluto para evitar conflitos</li>
+</ul>
+<br>
+<center>
+<img src="img/chrome_ext_save.png" style="width:20%">
+</center>
+<div class="footer">
+<p><a href="https://chromewebstore.google.com/detail/google-earth-engine-autos/clmadhnfadeiakdnohhnabdnabikpcja">Google Earth Engine Autosave</a></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>Editor de código</h2>
+<p><strong>Open Earth Engine extension</strong></p>
+<ul>
+<li>Adiciona recursos úteis ao editor de código do GEE</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="font-size: 40%;">
+<ul>
+<li><strong>modo noturno</strong></li>
+<li><strong>permite definir a fonte (incluindo o tamanho) do editor de código</strong></li>
+<li><strong>botão para upload de imagens via arrastar e soltar usando manifests</strong></li>
+<li><strong>botões (setas) para inserir a assinatura da função da documentação no editor de código</strong></li>
+<li>cache para a OEEL (Open Earth Engine Library)</li>
+<li>abre o editor de código ao clicar no ícone (ou a documentação da OEEL se o editor já estiver aberto)</li>
+<li>permite exportação automática</li>
+<li>cmd+S para salvar no Mac</li>
+<li>imagens do PlanetLab (busca / pedido / transferência para o GEE) usando a API do Planet</li>
+<li>verifica se os assets são compartilháveis ao “obter link”</li>
+<li>botão para executar todas as tarefas</li>
+<li>suporte para Plotly no editor de código e no EE App (incluindo eventos)</li>
+<li>abre o script em uma nova aba ao dar duplo clique</li>
+<li>terminal para depuração</li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div style="font-size: 40%;">
+<ul>
+<li>copia JSON ao dar duplo clique no botão JSON</li>
+<li>console com cabeçalho vermelho para alertas de crash</li>
+<li>adiciona interface Python</li>
+<li>link para documentação externa</li>
+<li>recurso de compartilhamento de código em tempo real</li>
+</ul>
+</div>
+</div>
+</div>
+<p><img data-src="img/chrome_ext_gee.png" class="absolute" style="top: 400px; right: 150px; width: 30%; "></p>
+<div class="footer">
+<p><a href="https://chromewebstore.google.com/detail/open-earth-engine-extensi/dhkobehdekjgdahfldleahkekjffibhg">Open Earth Engine extension</a></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>Editor de código</h2>
+<p><strong>Open Earth Engine extension</strong></p>
+<center>
+<img src="img/chrome_ext_gee_02.png" style="width:80%">
+</center>
+<div class="footer">
+<p><a href="https://chromewebstore.google.com/detail/open-earth-engine-extensi/dhkobehdekjgdahfldleahkekjffibhg">Open Earth Engine extension</a></p>
+</div>
+</section>
+<section class="slide level2">
+<h2>Editor de código</h2>
+<p><strong>Open Earth Engine extension</strong></p>
+<center>
+<img src="img/chrome_ext_gee_03.png" style="width:80%">
+</center>
+<div class="footer">
+<p><a href="https://chromewebstore.google.com/detail/open-earth-engine-extensi/dhkobehdekjgdahfldleahkekjffibhg">Open Earth Engine extension</a></p>
+</div>
+</section>
+<section class="slide level2">
 <h2>Rodando os códigos</h2>
 <ul>
 <li>Clique em <code>Run</code> ou <code>ctrl + alt + enter</code></li>
@@ -767,8 +845,8 @@
 <li><code>ctrl + /</code> em linhas comentadas, descomenta-as</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2" data-startfrom="414" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 413;"><span id="cb2-414"><a href=""></a><span class="co">// This is a comment!</span></span>
-<span id="cb2-415"><a href=""></a><span class="fu">print</span>(<span class="st">'Hello World'</span>)<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2" data-startfrom="497" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 496;"><span id="cb2-497"><a href=""></a><span class="co">// This is a comment!</span></span>
+<span id="cb2-498"><a href=""></a><span class="fu">print</span>(<span class="st">'Hello World'</span>)<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="expression">
 
@@ -785,11 +863,11 @@
 <li><code>**/</code> fim</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3" data-startfrom="427" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 426;"><span id="cb3-427"><a href=""></a><span class="co">/** </span></span>
-<span id="cb3-428"><a href=""></a><span class="co">This is a comment in multiple lines!</span></span>
-<span id="cb3-429"><a href=""></a><span class="co">Nothing here will be executed</span></span>
-<span id="cb3-430"><a href=""></a><span class="co">**/</span></span>
-<span id="cb3-431"><a href=""></a><span class="fu">print</span>(<span class="st">'Hello World'</span>)<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3" data-startfrom="510" data-source-offset="0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 509;"><span id="cb3-510"><a href=""></a><span class="co">/** </span></span>
+<span id="cb3-511"><a href=""></a><span class="co">This is a comment in multiple lines!</span></span>
+<span id="cb3-512"><a href=""></a><span class="co">Nothing here will be executed</span></span>
+<span id="cb3-513"><a href=""></a><span class="co">**/</span></span>
+<span id="cb3-514"><a href=""></a><span class="fu">print</span>(<span class="st">'Hello World'</span>)<span class="op">;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="expression">
 
@@ -951,17 +1029,31 @@
 
 </section>
 <section class="slide level2">
-<h2>Sites</h2>
+<h2>Sites e cursos</h2>
+<div style="font-size: 75%;">
 <ul>
 <li><a href="https://developers.google.com/earth-engine">Welcome to Google Earth Engine</a></li>
+<li><a href="https://developers.google.com/earth-engine/tutorials/ttt">Earth Engine resources for workshops</a></li>
+<li><a href="https://spatialthoughts.com/courses/google-earth-engine/">End-to-end Google Earth Engine</a></li>
+<li><a href="https://spatialthoughts.com/courses/gee-for-water-resources-management/">Google Earth Engine for Water Resources Management</a></li>
+<li><a href="https://spatialthoughts.com/courses/gee-charts/">Creating Publication Quality Charts with Google Earth Engine</a></li>
+<li><a href="https://docs.google.com/document/d/1ZxRKMie8dfTvBmUNOO0TFMkd7ELGWf3WjX0JvESZdOE/edit?tab=t.0#heading=h.eyqkdl96og9i">Earth Engine 101 - Introduction to the API</a></li>
+<li><a href="https://docs.google.com/presentation/d/1hT9q6kWigM1MM3p7IEcvNQlpPvkedW-lgCCrIqbNeis/edit#slide=id.p">What is Google Earth Engine?</a></li>
+<li><a href="https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook">Beginner’s Cookbook</a></li>
 </ul>
+</div>
 </section>
-<section class="slide level2 smaller">
+<section class="slide level2">
 <h2>Artigos e livros</h2>
-<p><br></p>
+<div style="font-size: 75%;">
 <ul>
-<li><a href="https://doi.org/10.1007/978-3-031-26588-4">Cardille, J.A., Crowley, M.A., Saah, D., Clinton, N.E. (Eds.), 2024. Cloud-Based Remote Sensing with Google Earth Engine: Fundamentals and Applications. Springer International Publishing, Cham.</a></li>
+<li><p><a href="https://doi.org/10.1016/j.rse.2017.06.031">Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D., &amp; Moore, R. (2017). Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote Sensing of Environment, 202, 18–27.</a></p></li>
+<li><p><a href="https://doi.org/10.1016/j.isprsjprs.2020.04.001">Tamiminia, H., Salehi, B., Mahdianpari, M., Quackenbush, L., Adeli, S., &amp; Brisco, B. (2020). Google Earth Engine for geo-big data applications: A meta-analysis and systematic review. ISPRS Journal of Photogrammetry and Remote Sensing, 164, 152–170.</a></p></li>
+<li><p><a href="https://doi.org/10.3390/rs15143675">Velastegui-Montoya, A., Montalván-Burbano, N., Carrión-Mero, P., Rivera-Torres, H., Sadeck, L., &amp; Adami, M. (2023). Google Earth Engine: A Global Analysis and Future Trends. Remote Sensing, 15(14), Artigo 14.</a></p></li>
+<li><p><a href="https://www.mdpi.com/books/reprint/1262-google-earth-engine-applications">Google Earth engine applications (with Kumar, L., &amp; Mutanga, O.). (2019). MDPI.</a></p></li>
+<li><p><a href="https://doi.org/10.1007/978-3-031-26588-4">Cardille, J. A., Crowley, M. A., Saah, D., &amp; Clinton, N. E. (Orgs.). (2024). Cloud-Based Remote Sensing with Google Earth Engine: Fundamentals and Applications. Springer International Publishing.</a></p></li>
 </ul>
+</div>
 </section>
 <section class="slide level2">
 <h2>Muito obrigado!</h2>
@@ -969,9 +1061,10 @@
 <div class="column" style="width:50%;">
 <p><strong>Acknowledgements</strong>:</p>
 <ul>
-<li>Yuri</li>
 <li>Thiago Sanna</li>
-<li>Dhemerson</li>
+<li>Dhemerson Conciani</li>
+<li>Iago Mendes</li>
+<li>Yuri Silva</li>
 </ul>
 <center>
 <img src="img/fapesp.png" style="width:70%">

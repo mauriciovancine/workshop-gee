@@ -307,6 +307,89 @@ Todo o material está disponível no [GitHub](https://github.com/mauriciovancine
 [AWOC2020 GEE Training](https://github.com/npec/AWOC2020-GEE-Training)
 :::
 
+## Editor de código
+
+**Google Earth Engine Autosave**
+
+- Salva automaticamente o código no GEE, evitando perda ao fechar a aba ou em caso de travamento
+- Armazena o código localmente e o restaura ao reabrir o arquivo, usando o caminho absoluto para evitar conflitos
+
+<br>
+<center>
+<img src="img/chrome_ext_save.png" style="width:20%"/>
+</center>
+
+:::footer
+[Google Earth Engine Autosave](https://chromewebstore.google.com/detail/google-earth-engine-autos/clmadhnfadeiakdnohhnabdnabikpcja)
+:::
+
+## Editor de código
+
+**Open Earth Engine extension**
+
+- Adiciona recursos úteis ao editor de código do GEE
+
+::: columns
+::: {.column width="50%"}
+::: {style="font-size: 40%;"}
+  - **modo noturno**
+  - **permite definir a fonte (incluindo o tamanho) do editor de código**
+  - **botão para upload de imagens via arrastar e soltar usando manifests**
+  - **botões (setas) para inserir a assinatura da função da documentação no editor de código**
+  - cache para a OEEL (Open Earth Engine Library)
+  - abre o editor de código ao clicar no ícone (ou a documentação da OEEL se o editor já estiver aberto)
+  - permite exportação automática
+  - cmd+S para salvar no Mac
+  - imagens do PlanetLab (busca / pedido / transferência para o GEE) usando a API do Planet
+  - verifica se os assets são compartilháveis ao "obter link"
+  - botão para executar todas as tarefas
+  - suporte para Plotly no editor de código e no EE App (incluindo eventos)
+  - abre o script em uma nova aba ao dar duplo clique
+  - terminal para depuração
+:::
+:::
+
+::: {.column width="50%"}
+::: {style="font-size: 40%;"}
+  - copia JSON ao dar duplo clique no botão JSON
+  - console com cabeçalho vermelho para alertas de crash
+  - adiciona interface Python
+  - link para documentação externa
+  - recurso de compartilhamento de código em tempo real
+:::
+:::
+:::
+
+![](img/chrome_ext_gee.png){.absolute width=30% right=150 top=400}
+
+:::footer
+[Open Earth Engine extension](https://chromewebstore.google.com/detail/open-earth-engine-extensi/dhkobehdekjgdahfldleahkekjffibhg)
+:::
+
+## Editor de código
+
+**Open Earth Engine extension**
+
+<center>
+<img src="img/chrome_ext_gee_02.png" style="width:80%"/>
+</center>
+
+:::footer
+[Open Earth Engine extension](https://chromewebstore.google.com/detail/open-earth-engine-extensi/dhkobehdekjgdahfldleahkekjffibhg)
+:::
+
+## Editor de código
+
+**Open Earth Engine extension**
+
+<center>
+<img src="img/chrome_ext_gee_03.png" style="width:80%"/>
+</center>
+
+:::footer
+[Open Earth Engine extension](https://chromewebstore.google.com/detail/open-earth-engine-extensi/dhkobehdekjgdahfldleahkekjffibhg)
+:::
+
 ## Rodando os códigos
 
 - Clique em `Run` ou `ctrl + alt + enter`
@@ -443,7 +526,7 @@ print('Hello World');
 - Variáveis recebem o **tipo** automaticamente dependendo do que foi atribuído (e.g. tipo `string` para texto e `numeric` para números)
 :::
 
-```{r}
+```{r eval=FALSE}
 var city = 'San Francisco';
 print(city);
 
@@ -585,18 +668,32 @@ print(greet('Readers'));
 
 # Material de estudo
 
-## Sites
+## Sites e cursos
 
+::: {style="font-size: 75%;"}
 - [Welcome to Google Earth Engine](https://developers.google.com/earth-engine)
+- [Earth Engine resources for workshops](https://developers.google.com/earth-engine/tutorials/ttt)
+- [End-to-end Google Earth Engine](https://spatialthoughts.com/courses/google-earth-engine/)
+- [Google Earth Engine for Water Resources Management](https://spatialthoughts.com/courses/gee-for-water-resources-management/)
+- [Creating Publication Quality Charts with Google Earth Engine](https://spatialthoughts.com/courses/gee-charts/)
+- [Earth Engine 101 - Introduction to the API](https://docs.google.com/document/d/1ZxRKMie8dfTvBmUNOO0TFMkd7ELGWf3WjX0JvESZdOE/edit?tab=t.0#heading=h.eyqkdl96og9i)
+- [What is Google Earth Engine?](https://docs.google.com/presentation/d/1hT9q6kWigM1MM3p7IEcvNQlpPvkedW-lgCCrIqbNeis/edit#slide=id.p)
+- [Beginner's Cookbook](https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook)
+:::
 
-## Artigos e livros {.smaller}
+## Artigos e livros
 
-<br>
+::: {style="font-size: 75%;"}
+- [Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D., & Moore, R. (2017). Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote Sensing of Environment, 202, 18–27.](https://doi.org/10.1016/j.rse.2017.06.031)
 
-- [Cardille, J.A., Crowley, M.A., Saah, D., Clinton, N.E. (Eds.), 2024. Cloud-Based Remote Sensing with Google Earth Engine: Fundamentals and Applications. Springer International Publishing, Cham.](https://doi.org/10.1007/978-3-031-26588-4)
+- [Tamiminia, H., Salehi, B., Mahdianpari, M., Quackenbush, L., Adeli, S., & Brisco, B. (2020). Google Earth Engine for geo-big data applications: A meta-analysis and systematic review. ISPRS Journal of Photogrammetry and Remote Sensing, 164, 152–170.](https://doi.org/10.1016/j.isprsjprs.2020.04.001)
 
+- [Velastegui-Montoya, A., Montalván-Burbano, N., Carrión-Mero, P., Rivera-Torres, H., Sadeck, L., & Adami, M. (2023). Google Earth Engine: A Global Analysis and Future Trends. Remote Sensing, 15(14), Artigo 14.](https://doi.org/10.3390/rs15143675)
 
+- [Google Earth engine applications (with Kumar, L., & Mutanga, O.). (2019). MDPI.](https://www.mdpi.com/books/reprint/1262-google-earth-engine-applications)
 
+- [Cardille, J. A., Crowley, M. A., Saah, D., & Clinton, N. E. (Orgs.). (2024). Cloud-Based Remote Sensing with Google Earth Engine: Fundamentals and Applications. Springer International Publishing.](https://doi.org/10.1007/978-3-031-26588-4)
+:::
 
 ## Muito obrigado!
 
@@ -604,9 +701,10 @@ print(greet('Readers'));
 ::: {.column width="50%"}
 **Acknowledgements**:
 
-- Yuri
 - Thiago Sanna
-- Dhemerson
+- Dhemerson Conciani
+- Iago Mendes
+- Yuri Silva
 
 <center>
 <img src="img/fapesp.png" style="width:70%"/>
